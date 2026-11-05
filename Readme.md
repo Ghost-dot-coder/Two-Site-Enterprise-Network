@@ -22,7 +22,7 @@ A two-site network (HQ and Branch) designed and configured in Cisco Packet Trace
 
 The two routers are connected by a 10.0.0.0/30 WAN link.
 
-The full address plan is in [addressing-table.md](addressing-table.md).
+The full address plan is in [IP Addressing Table.md](IP Addressing Table.md).
 
 ## What was configured
 
@@ -41,23 +41,14 @@ The full address plan is in [addressing-table.md](addressing-table.md).
 - `ip helper-address` on the VLAN interfaces forwards DHCP requests from the HQ VLANs to R1
 
 **Routing**
-- EIGRP (AS 100) on the routers and multilayer switches, with `no auto-summary`
+- EIGRP (AS 100) on the routers and multilayer switches
 - Static routes were used first, then replaced with EIGRP
 
 **Device hardening**
 - Hostnames and an `enable secret` on every device
 - Console access protected with a password
 
-## Verification
 
-| Test | Result |
-|------|--------|
-| VLANs and trunks on switches | ![VLAN brief](screenshots/02-vlan-brief-SW1.png) |
-| DHCP address on a PC | ![DHCP](screenshots/04-dhcp-pc.png) |
-| EIGRP neighbors on R1 | ![EIGRP neighbors](screenshots/07-eigrp-neighbors-R1.png) |
-| Routing table showing EIGRP routes (`D`) | ![Routes](screenshots/08-route-R1.png) |
-| Cross-site ping (HQ to Branch) | ![Ping](screenshots/12-ping-cross-site.png) |
-| Cross-site traceroute | ![Tracert](screenshots/13-tracert-cross-site.png) |
 
 More screenshots are in the [screenshots](screenshots/) folder.
 
