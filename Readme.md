@@ -2,7 +2,7 @@
 
 A two-site network (HQ and Branch) designed and configured in Cisco Packet Tracer. It uses VLANs, inter-VLAN routing on a multilayer switch, DHCP, EIGRP dynamic routing, and a dedicated management VLAN.
 
-![Topology](topology.png)
+![Topology](Topology.png)
 
 ## Project goals
 
